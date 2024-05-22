@@ -3,6 +3,7 @@ import LoginButton from "../Login/loginButton";
 import { useContext } from "react";
 import { LoginAuthContext } from "../../contexts/loginAuthContext";
 import { ToastContainer, toast } from "react-toastify";
+import EciSymbol from "../../assets/eciSymbol.png"
 
 interface navLinkType {
     text: string;
@@ -43,7 +44,7 @@ export default function Navbar() {
 
             <div className="px-[5%] flex gap-[2%] items-center justify-between">
                 <div className="w-[10%] flex items-center">
-                    <img className="w-[75px]" src="https://www.eci.gov.in/newimg/eci-logo-white.svg" alt="Election Commission of India" />
+                    <img className="w-[75px]" src={EciSymbol} alt="Election Commission of India" />
                     <div className="flex flex-col justify-center items-start whitespace-nowrap">
                         <span>भारत निर्वाचन आयोग</span>
                         <span className="font-semibold">Election Commission of India</span>

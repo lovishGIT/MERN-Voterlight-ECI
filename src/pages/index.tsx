@@ -50,6 +50,3 @@ function Home() {
 }
 
 export default Home;
-
-// family id store
-// find a station to vote near you

@@ -24,22 +24,22 @@ export default function Login() {
 
     const handleLoginSubmit = async (details: PhoneNumberDetails) => {
         console.log(details);
-        const response = await fetch('http://localhost:4000/api/vote/login',{
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(details),
-        })
-        if(!response.ok) {
-            toast("Login Failed! Wrong Entries.");
-        } else {
-            toast("Login Succesful!!");
-            //set Context (PENDING)
-            setTimeout(()=> {
-                navigate('/');
-            }, 1000);
-        }
+        // const response = await fetch('http://localhost:4000/api/vote/login',{
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(details),
+        // })
+        // if(!response.ok) {
+        //     toast("Login Failed! Wrong Entries.");
+        // } else {
+        //     toast("Login Succesful!!");
+        //     //set Context (PENDING)
+        //     setTimeout(()=> {
+        //         navigate('/');
+        //     }, 1000);
+        // }
     };
     const handleRegisterSubmit= async (details: PhoneNumberDetails) => {
         console.log(details);

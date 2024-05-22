@@ -2,6 +2,7 @@ import { FaGithub, FaLocationDot } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import EciSymbol from "../../assets/eciSymbol.png"
 
 interface linkType { 
     text: string;
@@ -47,7 +48,7 @@ export default function Footer() {
                     <div className="flex">
                         <img
                             className="w-[30%]"
-                            src="https://www.eci.gov.in/newimg/eci-logo-white.svg"
+                            src={EciSymbol}
                             alt="ECI Logo"
                             />
                         <p className="text-sm">

@@ -4,6 +4,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import Hero1 from "../../assets/hero1.jpg"
+import Hero2 from "../../assets/hero2.jpg"
+import Hero3 from "../../assets/hero3.jpg"
+
 export default function Hero() {
     return (
         <>
@@ -23,13 +27,13 @@ export default function Hero() {
                 navigation
             >
                 <SwiperSlide>
-                    <div className="w-full h-[350px] bg-[url(https://www.eci.gov.in/eci-backend/public/banner/March/15UP2uCGymOTr4O1710523300.jpg)] bg-cover bg-center"></div>
+                    <div className="w-full h-[350px] bg-cover bg-center" style={{ backgroundImage: `url(${Hero1})`}}></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="w-full h-[350px] bg-[url(https://www.eci.gov.in/eci-backend/public/banner/April/cg1wvFMPLChgIFV1712124541.jpg)] bg-cover bg-center"></div>
+                    <div className="w-full h-[350px] bg-cover bg-center" style={{ backgroundImage: `url(${Hero2})`}}></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="w-full h-[350px] bg-[url(https://www.eci.gov.in/eci-backend/public/banner/January/2rEFXb3Z7BOAx6G1706514283.jpg)] bg-cover bg-center"></div>
+                    <div className="w-full h-[350px] bg-cover bg-center" style={{ backgroundImage: `url(${Hero3})`}}></div>
                 </SwiperSlide>
             </Swiper>
         </>

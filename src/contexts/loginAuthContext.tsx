@@ -15,8 +15,7 @@ export const LoginAuthContext = createContext<LoginContextValue>({
     handleLoggedUserInfo: (name)=> (console.log(name))
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const LoginContextProvider= ({children}:ProviderProps)=> {
+const LoginContextProvider:unknown= ({children}:ProviderProps)=> {
     const [loggedUserInfo, setLoggedUserInfo]= useState<string>('No');
     const handleLoggedUserInfo= (name: string)=> {
         setLoggedUserInfo(name);

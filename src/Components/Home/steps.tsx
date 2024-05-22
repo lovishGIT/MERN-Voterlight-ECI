@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import IndianMapBg from "../../assets/IndianMapBg.png";
+import VoterPic from "../../assets/voter-pic.jpg"
 
 interface stepTypes {
     head: string;
@@ -33,7 +34,7 @@ export default function Steps() {
     return (
         <>
             <div className="px-[5%] py-[10vh] flex justify-center gap-[5%]">
-                <div className="w-[30%] bg-[url(https://www.eci.gov.in/newimg/voter-pic-01.jpg)] bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+                <div className="w-[30%] bg-cover bg-center bg-no-repeat rounded-2xl" style={{ backgroundImage: `url(${VoterPic})`}}></div>
                 <div>
                     <ol className="relative h-full py-[5%] flex flex-col space-y-4">
                         {stepsBeforeVoting.map(

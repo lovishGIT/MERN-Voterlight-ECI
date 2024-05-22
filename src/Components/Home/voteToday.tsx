@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import VoteTodayPic from "../../assets/voteToday-banner.jpg"
 
 export default function VoteToday() {
     return (
         <>
             <section id="VoteNow" className="h-[70vh] bg-[#052963] flex gap-[5%] items-center justify-center">
                 <div className="max-w-[400px] max-h-[400px]">
-                    <img src="https://www.eci.gov.in/newimg/voter-service-banner-02.jpg" />
+                    <img src={VoteTodayPic} />
                 </div>
                 <div className="flex flex-col justify-center items-center h-full">
                     <p className="text-xl text-white">
