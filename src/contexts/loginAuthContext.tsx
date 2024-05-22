@@ -15,7 +15,7 @@ export const LoginAuthContext = createContext<LoginContextValue>({
     handleLoggedUserInfo: (name)=> (console.log(name))
 });
 
-const LoginContextProvider:unknown= ({children}:ProviderProps)=> {
+const LoginContextProvider= ({children}:ProviderProps)=> {
     const [loggedUserInfo, setLoggedUserInfo]= useState<string>('No');
     const handleLoggedUserInfo= (name: string)=> {
         setLoggedUserInfo(name);
