@@ -34,32 +34,32 @@ export default function Login() {
         // if(!response.ok) {
         //     toast("Login Failed! Wrong Entries.");
         // } else {
-        //     toast("Login Succesful!!");
-        //     //set Context (PENDING)
-        //     setTimeout(()=> {
-        //         navigate('/');
-        //     }, 1000);
+            toast("Login Succesful!!");
+            //set Context (PENDING)
+            setTimeout(()=> {
+                navigate('/');
+            }, 1000);
         // }
     };
     const handleRegisterSubmit= async (details: PhoneNumberDetails) => {
         console.log(details);
-        const response = await fetch('http://localhost:4000/api/vote/login',{
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(details),
-        })
-        if(!response.ok) {
-            toast("Failed to Register.");
-        } else {
+        // const response = await fetch('http://localhost:4000/api/vote/login',{
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(details),
+        // })
+        // if(!response.ok) {
+        //     toast("Failed to Register.");
+        // } else {
             toast("Successfull Registration!");
             //set Context (PENDING)
             handleLoggedUserInfo(details.name || '');
             setTimeout(()=> {
                 navigate('/');
             }, 1000);
-        }
+        // }
     }
 
     return (
